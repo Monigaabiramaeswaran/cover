@@ -1,5 +1,5 @@
 # Ex.06 Book Front Cover Page Design
-## Date:
+## Date:07/10/2025
 
 ## AIM:
 To design a book front cover page using HTML and CSS.
@@ -31,10 +31,138 @@ Insert the images in their appropriate places.
 Publish the website in the LocalHost.
 
 ## PROGRAM:
+```
+moniga.html
+<html>
+    <head>
+        <title>Book cover</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="cover">
+            <div class="top">
+                <h3>SEC INSIGHTS</h3>
+            </div>
+            <div class="hrstyle">
+            <hr style="color: green">
+        </div>
+        <div class="booktitle">
+            <h1>INTERNET OF THINGS IN ACTION</h1>
+        </div>
+        <div class="subtitle">
+            <p>IOT introduces readers to<br> the concept of connecting smart devices to <br>the internet for data sharing and automation.</p>
+        </div>
+        <div class="bottom">
 
+        <div class="Author">
+            <p><b>A.MONIGA(25017526)</b></p>
+        </div>
+        <div class="edition">
+            <b>1ST Edition</b>
+            <hr>
+        </div>
+        <div class="photo">
+            <img src="myphoto.jpg" alt="Author photo" width="80" height="80"/>
+        </div>
+        <div class="sec">
+            <b>SEC</b>
+        </div>
+        </div>
+    </body>
+</html>
+
+style.css
+
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  margin:0;
+  background: #f0f0f0;
+}
+.cover {
+  border: solid 3px red;
+  border: right 40%;
+  border: left 40%;
+  border-bottom: 40%;
+  border-top: 40%;
+  height: 600px;
+  width:500px;
+  background-image: url('background.jpg'); 
+  background-size:cover;
+  background-position: center;
+  padding:20px;
+  color:white;
+  font-family:Arial,sans-serif;
+  position:relative;
+}
+.top h3 {
+    margin: 0;
+    color: white;
+    font-size: 16px;
+}
+.top hr {
+    border: 1px solid white;
+    margin:5px 0 20px;
+}
+.booktitle h1 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    margin: 60px 0 30px;
+}
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 80px;
+}
+.bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.edition {
+    font-weight: bold;
+    font-size: 14px;
+    color: yellow;
+}
+.author {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.photo {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+}
+.photo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border: 2px solid white;
+}
+.sec {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+```
 
 ## OUTPUT:
-
+![alt text](<Screenshot (39).png>)
 
 ## RESULT:
 The program for designing book front cover page using HTML and CSS is completed successfully.
